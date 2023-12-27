@@ -16,13 +16,13 @@ let generatePassword = function() {
   const passChars = [];
 
   // ask user for the length of their password
-  let characterAmount = window.prompt("Enter the amount of characters you want for your password. NOTE: Must be between 8-128 characters");
+  let characterAmount = 12;
 
   // If the character length doesn't match requirements, alert the user
   if (characterAmount >= 8 && characterAmount < 129) {
 
     // ask if user wants to include integers
-    const getInteger = window.confirm("Would you like to include NUMBERS?");
+    const getInteger = true;
 
     // if user wants to include numbers
     if (getInteger) {
@@ -33,7 +33,7 @@ let generatePassword = function() {
     };
 
     // ask if user wants to include special characters
-    const getSpecialCharacters = window.confirm("Would you like to include SPECIAL characters?");
+    const getSpecialCharacters = true;
 
     // if user wants to include special characters 
     if (getSpecialCharacters) {
@@ -44,7 +44,7 @@ let generatePassword = function() {
     };
 
     // ask if user wants to include lowercase characters
-    const getLowerCase = window.confirm("Would you like to include LOWERCASE characters?");
+    const getLowerCase = true;
 
     // if user wants to include lowercase characters
     if (getLowerCase) {
@@ -55,7 +55,7 @@ let generatePassword = function() {
     };
 
     // ask if user wants to include uppercase characters
-    const getUpperCase = window.confirm("Would you like to include UPPERCASE characters?");
+    const getUpperCase = true;
 
     // if user wants to include uppercase characters
     if (getUpperCase) {
