@@ -1,3 +1,4 @@
+<script>
 // passwordOptions contains all necessary string data needed to generate the password
 const passwordOptions = {
   num: "1234567890",
@@ -130,3 +131,4 @@ let copyPass = function() {
   // Notify user
   window.alert("Your password has been copied!");
 }
+</script>
